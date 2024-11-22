@@ -1,7 +1,7 @@
 #problema 1
 load("Bogdan1.Rdata")
 #Remove Outliers
-source("D:/Radu/myRappstat/Bogdan/outlierf.R", echo=TRUE)
+source("D:/Bogdan/myRappstat/Bogdan/outlierf.R", echo=TRUE)
 attach(ds1);
 dfx<-outlierKD(ds1,Egg_length)
 detach(ds1)
@@ -34,5 +34,3 @@ abline(lm(Light_MW~mean_Inc_per),col="red")
 plot(mean_Inc_per,Light_LW)
 abline(lm(Light_LW~mean_Inc_per),col="red")
 save(dfx,file="Bogdandfx.Rdata")
-
-

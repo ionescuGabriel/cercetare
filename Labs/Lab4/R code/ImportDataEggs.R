@@ -1,5 +1,5 @@
-setwd("D:/Radu/myRappstat/Bogdan")
+setwd("D:/Bogdan/myRappstat/Bogdan")
 library(readxl)
 ds1<-read_excel("BD Oua UV 2022.xlsx",sheet="Eggshells2021_MedianTrans10nm_t")
 colnames(ds1)
-save.image("D:/Radu/myRappstat/Bogdan/Bogdan1.RData")
+save.image("D:/Bogdan/myRappstat/Bogdan/Bogdan1.RData")
